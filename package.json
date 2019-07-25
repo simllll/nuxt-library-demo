@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build-lib": "cd packages/test-component-lib && npm run build",
+    "dev": "cd packages/nuxt-app && npm run dev"
+  }
+}

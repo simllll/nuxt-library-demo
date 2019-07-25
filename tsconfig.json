@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es2018",
+		"strictPropertyInitialization": false,
+		"resolveJsonModule": true,
+		"sourceMap": true
+	},
+	"exclude": ["**/__tests__"]
+}

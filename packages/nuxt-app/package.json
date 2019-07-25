@@ -1,0 +1,24 @@
+{
+  "name": "test-nuxt-app",
+  "version": "1.0.0",
+  "description": "My finest Nuxt.js project",
+  "author": "suits-at",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "test-component-lib": "0.0.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "fibers": "^4.0.1",
+    "nodemon": "^1.18.9",
+    "vuetify": "^2.0.0",
+    "sass": "^1.22.7",
+    "sass-loader": "^7.1.0"
+  }
+}
