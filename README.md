@@ -15,7 +15,7 @@ to install needed dependencies
 * npm run bootstrap
 
 ### build library
-npm run build-lin
+npm run build-lib
 
 ### start nuxt dev server
 npm run dev
