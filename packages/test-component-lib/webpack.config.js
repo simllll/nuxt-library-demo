@@ -2,9 +2,17 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const nodeExternals = require('webpack-node-externals');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 const extractCSS = true;
+
+const glob = require('glob')
+const PATHS = {
+	src: path.join(__dirname, 'src')
+}
+
+console.log('SRC', PATHS.src, glob.sync(`${PATHS.src}/**/*.vue`));
 
 const plugins = [new VueLoaderPlugin()];
 if (extractCSS)
@@ -12,6 +20,9 @@ if (extractCSS)
 		new MiniCssExtractPlugin({
 			filename: '[name].css',
 			chunkFilename: '[id].css'
+		}),
+		new PurgecssPlugin({
+			paths: glob.sync(`${PATHS.src}/**/*.vue`)
 		})
 	);
 

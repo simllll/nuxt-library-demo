@@ -1,11 +1,10 @@
 <template>
-	<Profile :user="user" :show-documents="showDocuments"></Profile>
+	<Test>Main</Test>
 </template>
 
 <script lang="ts">
-import { Prop, Component, Vue } from 'nuxt-property-decorator';
-import { IAPIUser } from '@hokify/common';
-import Profile from './cv/components/CvProfile.vue';
+import { Component, Vue } from 'vue-property-decorator';
+import Profile from './myComponents/components/test.vue';
 
 @Component({
 	name: 'Main',
@@ -14,13 +13,10 @@ import Profile from './cv/components/CvProfile.vue';
 	}
 })
 export default class Main extends Vue {
-	@Prop({ type: Boolean, default: true }) readonly showDocuments!: boolean;
 
-	@Prop({ type: Object, required: false }) readonly user?: IAPIUser;
 }
 </script>
 
 <style lang="scss">
-@import 'cv/assets/styles/tailwind.scss';
-@import 'cv/assets/styles/pwa.scss';
+
 </style>
