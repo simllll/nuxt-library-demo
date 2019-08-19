@@ -110,6 +110,9 @@ const config = dest => {
 											require('@fullhuman/postcss-purgecss')({
 												content: glob.sync(`${PATHS.src}/**/*.vue`), // ['./src/!**/!*.vue'],
 												...purgeCssConfig
+											}),
+											require('cssnano')({
+												preset: 'default'
 											})
 									  ]
 							}
