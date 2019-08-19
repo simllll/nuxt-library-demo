@@ -10,6 +10,17 @@ I'm using:
 
 See also https://cmty.app/nuxt/nuxt.js/issues/c9554
 
+
+## get started
+to install needed dependencies
+* npm install && npm run bootstrap
+
+### build library
+npm run build-lib
+
+### start nuxt dev server
+npm run dev
+
 # some notes
 ### package.json sideEffects
  if you set sideEffecs to false, css gets removed. Therefore I added "sideEffects": [
@@ -44,7 +55,7 @@ super important to hoist your dependencies (which means all node_modules are ins
 e.g. if you see something like  Property or method "_ssrNode" is not defined on the instance but referenced during render.  , you probably
 have multiple instances of vue lying around.
 
-### using this components within nuxt:
+### using you component library within nuxt (step by step):
 * add your component as module (nuxt.config.js)
 ```js
 modules: [
@@ -91,15 +102,6 @@ export default {
 </script>
 ```
 
-## get started
-to install needed dependencies
-* npm install && npm run bootstrap
-
-### build library
-npm run build-lib
-
-### start nuxt dev server
-npm run dev
 
 
 
