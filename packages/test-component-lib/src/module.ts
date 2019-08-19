@@ -13,7 +13,7 @@ export default function() {
 				 */
 				const imageAssets = glob.sync(path.join(assetsRoot, './images/**/*.*'));
 				imageAssets.forEach(assetPath => {
-					compilation.assets[`hcv/images/${path.basename(assetPath)}`] = {
+					compilation.assets[`my-custom-components/images/${path.basename(assetPath)}`] = {
 						source: () => fs.readFileSync(assetPath),
 						size: () => fs.statSync(assetPath).size
 					};
@@ -24,7 +24,7 @@ export default function() {
 				 */
 				const svgAssets = glob.sync(path.join(assetsRoot, './svgs/**/*.*'));
 				svgAssets.forEach(assetPath => {
-					compilation.assets[`hcv/svgs/${path.basename(assetPath)}`] = {
+					compilation.assets[`my-custom-components/svgs/${path.basename(assetPath)}`] = {
 						source: () => fs.readFileSync(assetPath),
 						size: () => fs.statSync(assetPath).size
 					};
@@ -35,7 +35,7 @@ export default function() {
 				 */
 				const fontAssets = glob.sync(path.join(assetsRoot, './fonts/**/*.*'));
 				fontAssets.forEach(assetPath => {
-					compilation.assets[`hcv/fonts/${path.basename(assetPath)}`] = {
+					compilation.assets[`my-custom-components/fonts/${path.basename(assetPath)}`] = {
 						source: () => fs.readFileSync(assetPath),
 						size: () => fs.statSync(assetPath).size
 					};
@@ -47,7 +47,7 @@ export default function() {
 				const clientAssets = glob.sync(path.join(assetsRoot, '../dist/client/*.*'));
 
 				clientAssets.forEach(assetPath => {
-					compilation.assets[`hcv/${path.basename(assetPath)}`] = {
+					compilation.assets[`my-custom-components/${path.basename(assetPath)}`] = {
 						source: () => fs.readFileSync(assetPath),
 						size: () => fs.statSync(assetPath).size
 					};
@@ -59,7 +59,7 @@ export default function() {
 				const modernAssets = glob.sync(path.join(assetsRoot, '../dist/modern/*.*'));
 
 				modernAssets.forEach(assetPath => {
-					compilation.assets[`hcv/${path.basename(assetPath)}`] = {
+					compilation.assets[`my-custom-components/${path.basename(assetPath)}`] = {
 						source: () => fs.readFileSync(assetPath),
 						size: () => fs.statSync(assetPath).size
 					};

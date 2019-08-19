@@ -7,8 +7,13 @@ const customSass = {
 	fiber: Fiber
 };
 
+const publicPath = '/some_random_public_path/';
+
 export default {
 	mode: 'universal',
+	env: {
+		publicPath // to know wat the public path is in the plugin
+	},
 	/*
 	 ** Headers of the page
 	 */
@@ -51,6 +56,7 @@ export default {
 	 ** Build configuration
 	 */
 	build: {
+		publicPath,
 		loaders: {
 			scss: customSass
 		},
