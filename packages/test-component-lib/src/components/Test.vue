@@ -8,14 +8,14 @@
 		</div>
 		<!-- tailwind test -->
 		<div>
-			<div class="md:flex">
-				<div class="md:flex-shrink-0">
-					<img class="rounded-lg md:w-56" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" alt="Woman paying for a purchase">
+			<div class="md:mcl-flex">
+				<div class="md:mcl-flex-shrink-0">
+					<img class="mcl-rounded-lg md:mcl-w-56" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" alt="Woman paying for a purchase">
 				</div>
-				<div class="mt-4 md:mt-0 md:ml-6">
-					<div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
-					<a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a>
-					<p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+				<div class="mcl-mt-4 md:mcl-mt-0 md:mcl-ml-6">
+					<div class="mcl-uppercase mcl-tracking-wide mcl-text-sm mcl-text-indigo-600 mcl-font-bold">Marketing</div>
+					<a href="#" class="mcl-block mcl-mt-1 mcl-text-lg mcl-leading-tight mcl-font-semibold mcl-text-gray-900 hover:mcl-underline">Finding customers for your new business</a>
+					<p class="mcl-mt-2 mcl-text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
 				</div>
 			</div>
 		</div>
