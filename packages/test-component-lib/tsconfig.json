@@ -1,9 +1,12 @@
 {
 	"extends": "../../tsconfig.json",
 	"compilerOptions": {
+		"module": "esnext",
 		"outDir": "./dist"
 	},
 	"include": [
-		"./src"
+		"./src",
+		"shim.d.ts",
+		"./types"
 	]
 }

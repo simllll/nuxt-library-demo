@@ -6,29 +6,16 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import { Test, CvDocuments } from 'test-component-lib';
+import { Test } from 'test-component-lib';
 
 // Vue.component('Test', Test);
 export default {
   components: {
     Logo,
-    Test,
-      CvDocuments,
-	//  HelloWorld
-  },
-
-  created() {
-    // console.log('X', X);
-    // console.log('Test', Test);
-     // console.log('test', test);
-//      console.log('HelloWorld', HelloWorld);
+    Test
   }
 }
 </script>
-
-<style lang="scss">
-@import "~test-component-lib/dist/index";
-</style>
 
 <style>
 .container {

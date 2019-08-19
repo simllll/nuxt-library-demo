@@ -1,5 +1,6 @@
 import Fiber from 'fibers';
 import Sass from 'sass';
+import * as path from 'path';
 
 const customSass = {
 	implementation: Sass,
@@ -35,11 +36,17 @@ export default {
 	/*
 	 ** Plugins to load before mounting the App
 	 */
-	// plugins: ['plugins/hokifycv.js'],
+	plugins: [
+		// load components library as plugin
+		'~/plugins/my-component-library'
+	],
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: [],
+	modules: [
+		// load components library as module
+		path.join(path.dirname(require.resolve('test-component-lib')), '/module')
+	],
 	/*
 	 ** Build configuration
 	 */
@@ -52,10 +59,9 @@ export default {
 		 ** You can extend webpack config here
 		 */
 		// extend webpack config
-		extend(config, { isDev, isClient }) {
+		extend(config, { isDev }) {
 			// do not resolve symlinks
 			if (isDev) config.resolve.symlinks = false
-			console.log(' config.resolve.symlinks', isClient,  config.resolve.symlinks);
 		}
 	}
 };

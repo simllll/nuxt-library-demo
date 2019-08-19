@@ -1,10 +1,24 @@
 // components
-import Test from './myComponents/components/test.vue';
+export * from './components';
 
-// styles
-import './myComponents/assets/styles/tailwind.scss'
+let installed = false;
 
-// export components
-export default {
-	Test,
+const HokifyCvComponents = {
+	install: (Vue, params: { moment?: any; publicPath: string }) => {
+		if (installed) {
+			console.error('[my-custom-components] already installed');
+			return;
+		}
+		installed = true;
+
+		if (params.publicPath) {
+			__webpack_public_path__ = `${params.publicPath}my-custom-components/`;
+		}
+
+		if (!('$moment' in Vue.prototype) && params.moment) {
+			Vue.prototype.$moment = params.moment;
+		}
+	}
 };
+
+export default HokifyCvComponents;

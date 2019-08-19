@@ -2,10 +2,13 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist",
+    "dev-lib": "cd packages/test-component-lib && npm run dev",
     "build-lib": "cd packages/test-component-lib && npm run build",
     "dev": "cd packages/nuxt-app && npm run dev"
   }

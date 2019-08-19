@@ -4,7 +4,7 @@
 		<div class="test">
 			<h1>It Works!!</h1>
 			Slot: <slot>no default slot provided</slot>
-			<img src="~assets/img/unknown_user.png">
+			<img src="~assets/images/unknown_user.png">
 		</div>
 		<!-- tailwind test -->
 		<div>
@@ -30,6 +30,7 @@ import { Component, Vue } from 'vue-property-decorator';
 })
 export default class Test extends Vue {}
 </script>
+<style lang="scss" src="~styles/my-custom-library-base.scss" />
 
 <style lang="scss" scoped>
 	div.test {
