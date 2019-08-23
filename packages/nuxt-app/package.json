@@ -1,24 +1,24 @@
 {
   "name": "test-nuxt-app",
   "version": "1.0.0",
-  "description": "My finest Nuxt.js project",
-  "author": "suits-at",
+  "description": "Nuxt.js Demo to show how you can use your own shared component library",
   "private": true,
+  "author": "simon.tretter@hokify.com",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "dependencies": {
-    "test-component-lib": "0.0.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.9.1",
+    "test-component-lib": "^0.1.3"
   },
   "devDependencies": {
     "fibers": "^4.0.1",
-    "nodemon": "^1.18.9",
-    "vuetify": "^2.0.0",
-    "sass": "^1.22.7",
-    "sass-loader": "^7.1.0"
+    "nodemon": "^1.19.1",
+    "sass": "^1.22.10",
+    "sass-loader": "^7.3.1",
+    "vuetify": "^2.0.10"
   }
 }

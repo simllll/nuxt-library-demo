@@ -1,65 +1,69 @@
 {
-	"name": "test-component-lib",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"prepare": "npm run build",
-		"dev": "webpack-dev-server --config ./webpack.demo.config.js",
-		"build": "gulp build",
-		"clean": "gulp clean"
-	},
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"directories": {
-		"lib": "dist"
-	},
-	"sideEffects": [
-		"*.css",
-		"*.scss",
-		"*.vue"
-	],
-	"dependencies": {
-		"moment": "^2.24.0",
-		"vue": "^2.6.10",
-		"vue-i18n": "^8.14.0",
-		"vue-property-decorator": "^8.2.1"
-	},
-	"devDependencies": {
-		"cssnano": "^4.1.10",
-		"cache-loader": "^4.1.0",
-		"mini-css-extract-plugin": "^0.8.0",
-		"@babel/core": "^7.5.5",
-		"@babel/plugin-proposal-decorators": "^7.4.4",
-		"@babel/plugin-transform-runtime": "^7.5.5",
-		"@babel/preset-env": "^7.5.5",
-		"@fullhuman/postcss-purgecss": "^1.2.0",
-		"babel-loader": "^8.0.6",
-		"css-loader": "^2.1.1",
-		"gulp": "^4.0.2",
-		"gulp-rename": "^1.4.0",
-		"hard-source-webpack-plugin": "^0.13.1",
-		"moment-locales-webpack-plugin": "^1.1.0",
-		"postcss-loader": "^3.0.0",
-		"purgecss-webpack-plugin": "^1.5.0",
-		"sass": "^1.22.9",
-		"sass-loader": "^7.2.0",
-		"tailwindcss": "^1.1.2",
-		"ts-loader": "^6.0.4",
-		"ts-node": "^8.3.0",
-		"typescript": "^3.5.3",
-		"vue-loader": "^15.7.1",
-		"vue-template-compiler": "^2.6.10",
-		"webpack": "^4.39.2",
-		"webpack-bundle-analyzer": "^3.4.1",
-		"webpack-cleanup-plugin": "^0.5.1",
-		"webpack-cli": "^3.3.6",
-		"webpack-dev-server": "^3.8.0",
-		"webpack-node-externals": "^1.7.2",
-		"webpackbar": "^4.0.0",
-		"file-loader": "^4.2.0"
-	},
-	"files": [
-		"dist",
-		"assets"
-	]
+  "name": "test-component-lib",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "description": "shared component library for nuxt.js with SSR and CSS injection and a lot of other optimizations",
+  "author": "simon.tretter@hokify.com",
+  "directories": {
+    "lib": "dist"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "dev": "webpack-dev-server --config ./webpack.demo.config.js",
+    "prepare": "npm run build"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.scss",
+    "*.vue"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.14.0",
+    "vue-property-decorator": "^8.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@nuxt/babel-preset-app": "^2.9.1",
+    "babel-loader": "^8.0.6",
+    "cache-loader": "^4.1.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "lodash-webpack-plugin": "^0.11.5",
+    "mini-css-extract-plugin": "^0.8.0",
+    "moment-locales-webpack-plugin": "^1.1.0",
+    "postcss-loader": "^3.0.0",
+    "purgecss-webpack-plugin": "^1.5.0",
+    "sass": "^1.22.10",
+    "sass-loader": "^7.3.1",
+    "tailwindcss": "^1.1.2",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.2",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cleanup-plugin": "^0.5.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-node-externals": "^1.7.2",
+    "webpackbar": "^4.0.0"
+  }
 }
